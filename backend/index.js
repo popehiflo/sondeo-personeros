@@ -1,3 +1,6 @@
+require('dotenv').config(); // busca archivos .env y establece esa variables
+// en las variables de entorno de node
+
 const express = require('express');
 
 
@@ -11,6 +14,8 @@ dbConnection();
 
 // Rutas
 app.use( '/api/personero', require('./routes/personero.routes'));
-app.listen(3000, () => {
-    console.log('Servidor corriendo en puerto ' + 3000);
+
+// Server
+app.listen(process.env.PORT, () => {
+    console.log('Servidor corriendo en puerto ' + process.env.PORT);
 })
