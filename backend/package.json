@@ -4,6 +4,7 @@
   "description": "Recepcion de reportes de personeros; nro de votos en sus mesas",
   "main": "index.js",
   "scripts": {
+    "start:dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
